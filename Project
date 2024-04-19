@@ -2,9 +2,13 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/3.0.4/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene embedded arjs>
+      <!-- AR Camera -->
+      <a-marker-camera preset="hiro"></a-marker-camera>
+      
       <!-- Cube -->
       <a-box position="-2 0 -3" color="red"></a-box>
       
